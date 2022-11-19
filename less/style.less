@@ -1,0 +1,75 @@
+@import "./params/mix";
+@import "./header.less";
+@import "./main.less";
+@import "./center.less";
+@import "./work.less";
+@import "./carusel.less";
+@import "./started.less";
+@import "./shop.less";
+@import "./desigin.less";
+@import "./about.less";
+@import "./footer.less";
+
+body {
+  font-family: "Lato", "san-serif";
+}
+.errorMsg {
+  color: rgb(255, 0, 0);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-bottom: 10px;
+  display: none;
+}
+.activeBars {
+  display: none;
+  .md(display , block);
+}
+
+.activeMenuBars {
+  display: block;
+  .md(display , none);
+}
+p.text{
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 28px;
+  color: black;
+  .md-block({
+    font-size: 14px;
+    line-height: 20px;
+  })
+}
+h2.title{
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 54px;
+  color: black;
+  .md-block({
+    font-size: 20px;
+    line-height: 35px;
+  })
+}
+a.uno{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgba(69, 67, 232, 1);
+  .sm-block({
+    font-size: 12px;
+    line-height: 18px;
+  })
+}
+h4.meta{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 32px;
+}
+.activeCourses {
+  display: none;
+}

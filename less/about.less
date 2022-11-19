@@ -1,0 +1,48 @@
+.about{
+    width: 100%;
+    margin-top: 120px;
+    .md-block({
+        display: none;
+    });
+    .card{
+        display: flex !important;
+        align-items: center;
+        // flex-wrap: wrap;
+        .box{
+            position: relative;
+            .img{
+                img{
+                    width: 100%;
+                }
+            }
+            .text{
+                position: absolute;
+                top: 30%;
+                left: 10%;
+                text-align: center;
+                .sm-block({
+                   top: 25%;
+                });
+                h4.meta{
+                    color: white;
+                }
+                p{
+                    color: white;
+                    margin-top: 25px;
+                    .sm-block({
+                        margin-top: 5px;
+                    })
+                }
+                a.uno{
+                    margin-top: 40px;
+                    display: block;
+                    color: white;   
+                    text-align: center;
+                    .sm-block({
+                        margin-top: 10px;
+                    })
+                }
+            }
+        }
+    }
+}

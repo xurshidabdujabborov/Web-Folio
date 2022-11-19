@@ -1,0 +1,111 @@
+footer {
+    width: 100%;
+    background: rgba(1, 0, 50, 1);
+    padding-top: 140px;
+
+    .fot {
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .sm-block({
+           flex-direction: column;
+        });
+
+        h2.title {
+            color: white;
+        }
+    }
+
+    .asu {
+        display: flex;
+        justify-content: left;
+        .sm-block({
+           justify-content: center;
+        });
+        a.uno {
+            display: block;
+            color: white;
+            margin-top: 120px;
+        }
+    }
+
+    ul {
+        margin-top: 120px;
+        .sm-block({
+          text-align: center;
+        });
+        li {
+            margin: 10px 0px;
+
+            a {
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 28px;
+                color: white;
+            }
+        }
+    }
+
+    p.text {
+        margin-top: 120px;
+        color: white;
+        .sm-block({
+            text-align: center;
+        })
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+        .sm-block({
+           justify-content: center;
+        }); 
+        input {
+            width: 250px;
+            height: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            border-radius: 240px;
+            background: rgba(1, 0, 50, 1);
+            &:focus{
+                outline: none;
+            }
+        }
+
+        button {
+            width: 120px;
+            height: 50px;
+            border: none;
+            margin-left: 20px;
+            background: #4543E8;
+            border-radius: 24px;
+        }
+    }
+    .ciz{
+        width: 100%;
+        border-top: 2px solid #fff;
+        margin-top: 75px;
+    }
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .sm-block({
+           flex-direction: column;
+        });
+        ul{
+            display: flex;
+            align-items: center;
+            .sm-block({
+              flex-direction: column;
+            });
+            li{
+                margin: 0px 20px;
+                .sm-block({
+                    margin: 10px 0px;
+                })
+            }
+        }
+    }
+}

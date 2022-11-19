@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Folio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Epilogue&family=Inter:wght@400;500;600;800&family=Lato:wght@400;700;900&family=Poppins&family=Raleway&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Libs/reset.css">
+    <link rel="stylesheet" href="Libs/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="Libs/css/all.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <!-- header_starting -->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <svg width="152" height="32" viewBox="0 0 152 32" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_7)">
+                                <path
+                                    d="M58.7538 24.664L56.2408 12.7685H58.7991L61.3234 23.6783L60.7461 23.7007L62.3195 12.7685H65.9418L63.542 24.664H58.7538ZM50.3998 24.664L48 12.7685H51.6223L53.1958 23.7007L52.6298 23.6783L55.1315 12.7685H57.6897L55.1994 24.664H50.3998Z"
+                                    fill="white" />
+                                <path
+                                    d="M68.8721 19.7579V17.4617H76.8412L76.5016 18.0442C76.5016 17.9844 76.5016 17.9284 76.5016 17.8762C76.5016 17.8164 76.5016 17.7604 76.5016 17.7082C76.5016 17.2825 76.3997 16.8755 76.1959 16.4872C75.9922 16.0915 75.6752 15.7704 75.2451 15.524C74.8225 15.2701 74.2791 15.1431 73.615 15.1431C72.9509 15.1431 72.3774 15.285 71.8944 15.5688C71.419 15.8451 71.053 16.2446 70.7964 16.7673C70.5474 17.29 70.4229 17.921 70.4229 18.6602C70.4229 19.4219 70.5436 20.0753 70.7851 20.6204C71.0341 21.1581 71.4001 21.5725 71.8831 21.8637C72.3736 22.1549 72.9811 22.3006 73.7056 22.3006C74.1735 22.3006 74.5772 22.2595 74.9168 22.1774C75.2564 22.0877 75.5319 21.9757 75.7432 21.8413C75.962 21.7069 76.128 21.5576 76.2412 21.3933C76.3544 21.229 76.4223 21.0685 76.445 20.9116H79.9088C79.8635 21.4119 79.69 21.9048 79.3881 22.3902C79.0863 22.8681 78.6674 23.3012 78.1316 23.6895C77.5958 24.0703 76.9431 24.3727 76.1733 24.5968C75.4111 24.8208 74.5395 24.9328 73.5584 24.9328C72.2303 24.9328 71.0719 24.6714 70.0833 24.1487C69.0947 23.6185 68.3287 22.8905 67.7854 21.9645C67.242 21.0311 66.9703 19.9558 66.9703 18.7386C66.9703 17.5065 67.2458 16.4275 67.7967 15.5016C68.3551 14.5681 69.1286 13.8438 70.1172 13.3286C71.1134 12.8058 72.2642 12.5445 73.5698 12.5445C74.9055 12.5445 76.0601 12.8096 77.0336 13.3398C78.0071 13.8625 78.758 14.598 79.2862 15.5464C79.8145 16.4872 80.0786 17.5849 80.0786 18.8395C80.0786 19.0261 80.0748 19.2054 80.0673 19.3771C80.0598 19.5488 80.0484 19.6758 80.0333 19.7579H68.8721Z"
+                                    fill="white" />
+                                <path
+                                    d="M89.505 24.9216C88.5541 24.9216 87.6825 24.6714 86.8901 24.1711C86.0977 23.6708 85.4638 22.995 84.9884 22.1437C84.513 21.285 84.2753 20.3217 84.2753 19.2539C84.2753 19.224 84.2753 19.1979 84.2753 19.1755C84.2753 19.1456 84.2753 19.112 84.2753 19.0747L85.7921 19.0411C85.7921 19.0635 85.7921 19.0859 85.7921 19.1083C85.7921 19.1307 85.7921 19.1531 85.7921 19.1755C85.7921 19.7281 85.9279 20.2134 86.1996 20.6316C86.4713 21.0423 86.8222 21.3597 87.2523 21.5837C87.6825 21.8077 88.1315 21.9197 88.5994 21.9197C89.3691 21.9197 90.037 21.6584 90.603 21.1357C91.1765 20.6055 91.4633 19.7803 91.4633 18.6602C91.4633 17.5401 91.1803 16.7262 90.6143 16.2184C90.0483 15.7032 89.3767 15.4456 88.5994 15.4456C88.1315 15.4456 87.6825 15.5576 87.2523 15.7816C86.8222 15.9981 86.4713 16.308 86.1996 16.7113C85.9279 17.1145 85.7921 17.5961 85.7921 18.1562L84.2753 18.0666C84.2753 16.9913 84.513 16.0429 84.9884 15.2215C85.4638 14.3927 86.0977 13.743 86.8901 13.2726C87.6825 12.7946 88.5541 12.5557 89.505 12.5557C90.4785 12.5557 91.3878 12.7909 92.233 13.2614C93.0783 13.7318 93.7612 14.4225 94.2819 15.3335C94.8102 16.2446 95.0743 17.3535 95.0743 18.6602C95.0743 20.0268 94.8177 21.1767 94.3046 22.1101C93.7914 23.0361 93.1122 23.738 92.267 24.2159C91.4218 24.6864 90.5011 24.9216 89.505 24.9216ZM82.2717 24.664V7.15681H85.7921V24.664H82.2717Z"
+                                    fill="white" />
+                                <path
+                                    d="M99.1972 25C98.6765 25 98.235 24.8208 97.8728 24.4624C97.5105 24.1039 97.3294 23.6671 97.3294 23.1518C97.3294 22.6441 97.5105 22.211 97.8728 21.8525C98.235 21.4941 98.6765 21.3149 99.1972 21.3149C99.7103 21.3149 100.148 21.4941 100.51 21.8525C100.873 22.211 101.054 22.6441 101.054 23.1518C101.054 23.6671 100.873 24.1039 100.51 24.4624C100.148 24.8208 99.7103 25 99.1972 25Z"
+                                    fill="white" />
+                                <path
+                                    d="M104.183 24.664V15.4568H101.681V12.7685H104.183V11.9508C104.183 11.1593 104.288 10.4835 104.5 9.92346C104.718 9.35594 105.013 8.8855 105.383 8.51213C105.752 8.1313 106.167 7.83261 106.628 7.61605C107.096 7.39203 107.575 7.23522 108.065 7.14561C108.563 7.04854 109.046 7 109.514 7C110.012 7 110.382 7.02987 110.624 7.08961C110.873 7.14188 111.039 7.18668 111.122 7.22402V9.92346C111.031 9.89359 110.869 9.85999 110.635 9.82265C110.409 9.78531 110.163 9.76665 109.899 9.76665C109.461 9.76665 109.099 9.82265 108.812 9.93466C108.526 10.0467 108.299 10.211 108.133 10.4275C107.967 10.6366 107.85 10.8867 107.782 11.178C107.714 11.4617 107.68 11.7716 107.68 12.1077V12.7685H110.907V15.4568H107.68V24.664H104.183Z"
+                                    fill="white" />
+                                <path
+                                    d="M118.273 24.9216C116.975 24.9216 115.832 24.6565 114.844 24.1263C113.855 23.5961 113.081 22.8681 112.523 21.9421C111.972 21.0087 111.697 19.9334 111.697 18.7162C111.697 17.5065 111.972 16.4387 112.523 15.5128C113.081 14.5793 113.855 13.855 114.844 13.3398C115.832 12.8171 116.975 12.5557 118.273 12.5557C119.571 12.5557 120.715 12.8171 121.703 13.3398C122.692 13.855 123.462 14.5793 124.013 15.5128C124.571 16.4387 124.85 17.5065 124.85 18.7162C124.85 19.9334 124.571 21.0087 124.013 21.9421C123.462 22.8681 122.692 23.5961 121.703 24.1263C120.715 24.6565 119.571 24.9216 118.273 24.9216ZM118.273 22.1661C118.885 22.1661 119.417 22.0243 119.87 21.7405C120.322 21.4568 120.673 21.0573 120.922 20.542C121.171 20.0193 121.296 19.4107 121.296 18.7162C121.296 18.0218 121.171 17.4207 120.922 16.9129C120.673 16.3976 120.322 16.0019 119.87 15.7256C119.417 15.4493 118.885 15.3111 118.273 15.3111C117.67 15.3111 117.138 15.4493 116.677 15.7256C116.225 16.0019 115.874 16.3976 115.625 16.9129C115.376 17.4207 115.251 18.0218 115.251 18.7162C115.251 19.4107 115.376 20.0193 115.625 20.542C115.874 21.0573 116.225 21.4568 116.677 21.7405C117.138 22.0243 117.67 22.1661 118.273 22.1661Z"
+                                    fill="white" />
+                                <path d="M130.676 7.15681V24.664H127.212V7.15681H130.676Z" fill="white" />
+                                <path
+                                    d="M133.34 24.664V12.7685H136.815V24.664H133.34ZM135.072 10.8307C134.529 10.8307 134.053 10.6889 133.646 10.4051C133.246 10.1213 133.046 9.72184 133.046 9.2066C133.046 8.68388 133.246 8.28065 133.646 7.99689C134.053 7.71313 134.529 7.57125 135.072 7.57125C135.623 7.57125 136.098 7.71313 136.498 7.99689C136.906 8.28065 137.11 8.68388 137.11 9.2066C137.11 9.72931 136.906 10.1325 136.498 10.4163C136.098 10.6926 135.623 10.8307 135.072 10.8307Z"
+                                    fill="white" />
+                                <path
+                                    d="M145.423 24.9216C144.125 24.9216 142.982 24.6565 141.993 24.1263C141.005 23.5961 140.231 22.8681 139.673 21.9421C139.122 21.0087 138.846 19.9334 138.846 18.7162C138.846 17.5065 139.122 16.4387 139.673 15.5128C140.231 14.5793 141.005 13.855 141.993 13.3398C142.982 12.8171 144.125 12.5557 145.423 12.5557C146.721 12.5557 147.865 12.8171 148.853 13.3398C149.842 13.855 150.611 14.5793 151.162 15.5128C151.721 16.4387 152 17.5065 152 18.7162C152 19.9334 151.721 21.0087 151.162 21.9421C150.611 22.8681 149.842 23.5961 148.853 24.1263C147.865 24.6565 146.721 24.9216 145.423 24.9216ZM145.423 22.1661C146.034 22.1661 146.567 22.0243 147.019 21.7405C147.472 21.4568 147.823 21.0573 148.072 20.542C148.321 20.0193 148.446 19.4107 148.446 18.7162C148.446 18.0218 148.321 17.4207 148.072 16.9129C147.823 16.3976 147.472 16.0019 147.019 15.7256C146.567 15.4493 146.034 15.3111 145.423 15.3111C144.819 15.3111 144.287 15.4493 143.827 15.7256C143.374 16.0019 143.023 16.3976 142.774 16.9129C142.525 17.4207 142.401 18.0218 142.401 18.7162C142.401 19.4107 142.525 20.0193 142.774 20.542C143.023 21.0573 143.374 21.4568 143.827 21.7405C144.287 22.0243 144.819 22.1661 145.423 22.1661Z"
+                                    fill="white" />
+                                <path
+                                    d="M2.66667 24H5.33333C6.80889 24 8 22.8089 8 21.3333V18.6667C8 17.1911 6.80889 16 5.33333 16H2.66667C1.19111 16 0 17.1911 0 18.6667V21.3333C0 22.8089 1.19111 24 2.66667 24Z"
+                                    fill="#D8D8EB" />
+                                <path
+                                    d="M10.6667 16H13.3333C14.8089 16 16 14.8089 16 13.3333V10.6667C16 9.19111 14.8089 8 13.3333 8H10.6667C9.19111 8 8 9.19111 8 10.6667V13.3333C8 14.8089 9.19111 16 10.6667 16Z"
+                                    fill="#D8D8EB" />
+                                <path
+                                    d="M21.3333 24H18.6667C17.1911 24 16 22.8089 16 21.3333V18.6667C16 17.1911 17.1911 16 18.6667 16H21.3333C22.8089 16 24 17.1911 24 18.6667V21.3333C24 22.8089 22.8089 24 21.3333 24Z"
+                                    fill="#D8D8EB" />
+                                <path
+                                    d="M13.3333 24H10.6667C9.19111 24 8 25.1911 8 26.6667V29.3333C8 30.8089 9.19111 32 10.6667 32H13.3333C14.8089 32 16 30.8089 16 29.3333V26.6667C16 25.1911 14.8089 24 13.3333 24Z"
+                                    fill="#D8D8EB" />
+                                <path
+                                    d="M18.6667 8H21.3333C22.8089 8 24 6.80889 24 5.33333V2.66667C24 1.19111 22.8089 0 21.3333 0H18.6667C17.1911 0 16 1.19111 16 2.66667V5.33333C16 6.80889 17.1911 8 18.6667 8Z"
+                                    fill="#D8D8EB" />
+                                <path
+                                    d="M29.3333 16H26.6667C25.1911 16 24 14.8089 24 13.3333V10.6667C24 9.19111 25.1911 8 26.6667 8H29.3333C30.8089 8 32 9.19111 32 10.6667V13.3333C32 14.8089 30.8089 16 29.3333 16Z"
+                                    fill="#D8D8EB" />
+                                <path
+                                    d="M5.33398 16C6.80954 16 8.00065 14.8089 8.00065 13.3334C8.00065 14.8089 9.19176 16 10.6673 16C9.19176 16 8.00065 17.1912 8.00065 18.6667C8.00065 17.1912 6.80954 16 5.33398 16Z"
+                                    fill="#D8D8EB" />
+                                <path
+                                    d="M13.334 8.00004C14.8095 8.00004 16.0007 6.80893 16.0007 5.33337C16.0007 6.80893 17.1918 8.00004 18.6673 8.00004C17.1918 8.00004 16.0007 9.19115 16.0007 10.6667C16.0007 9.19115 14.8095 8.00004 13.334 8.00004Z"
+                                    fill="#D8D8EB" />
+                                <path
+                                    d="M13.334 24C14.8095 24 16.0007 22.8089 16.0007 21.3334C16.0007 22.8089 17.1918 24 18.6673 24C17.1918 24 16.0007 25.1912 16.0007 26.6667C16.0007 25.1912 14.8095 24 13.334 24Z"
+                                    fill="#D8D8EB" />
+                                <path
+                                    d="M21.334 16C22.8095 16 24.0007 14.8089 24.0007 13.3334C24.0007 14.8089 25.1918 16 26.6673 16C25.1918 16 24.0007 17.1912 24.0007 18.6667C24.0007 17.1912 22.8095 16 21.334 16Z"
+                                    fill="#D8D8EB" />
+                                <path
+                                    d="M13.334 16C14.8095 16 16.0007 14.8089 16.0007 13.3334C16.0007 14.8089 17.1918 16 18.6673 16C17.1918 16 16.0007 17.1912 16.0007 18.6667C16.0007 17.1912 14.8095 16 13.334 16Z"
+                                    fill="#D8D8EB" />
+                                <path
+                                    d="M21.334 8.00004C22.8095 8.00004 24.0007 6.80893 24.0007 5.33337C24.0007 6.80893 25.1918 8.00004 26.6673 8.00004C25.1918 8.00004 24.0007 9.19115 24.0007 10.6667C24.0007 9.19115 22.8095 8.00004 21.334 8.00004Z"
+                                    fill="#D8D8EB" />
+                                <path
+                                    d="M5.33398 24C6.80954 24 8.00065 22.8089 8.00065 21.3334C8.00065 22.8089 9.19176 24 10.6673 24C9.19176 24 8.00065 25.1912 8.00065 26.6667C8.00065 25.1912 6.80954 24 5.33398 24Z"
+                                    fill="#D8D8EB" />
+                                <path
+                                    d="M24 0H8C3.58172 0 0 3.58172 0 8V24C0 28.4183 3.58172 32 8 32H24C28.4183 32 32 28.4183 32 24V8C32 3.58172 28.4183 0 24 0Z"
+                                    fill="#D8D8EB" />
+                                <path
+                                    d="M28 22C28 18.6863 25.3137 16 22 16C18.6863 16 16 18.6863 16 22C16 25.3137 18.6863 28 22 28C25.3137 28 28 25.3137 28 22Z"
+                                    fill="#010032" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_7">
+                                    <rect width="152" height="32" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="col-auto activeBars">
+                        <div class="bars">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 activeMenuBars">
+                        <ul>
+                            <li>
+                                <a href="#">Work</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Shop</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <button class="signUp">sign up</button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="headerLogin">
+            <h3>Login</h3>
+            <form action="">
+                <input type="text" placeholder="Login">
+                <p class="errorMsg"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Login bosh qoldirmang!!!
+                </p>
+                <div class="pass">
+                    <input type="password" placeholder="password">
+                    <span><i class="fa fa-eye eyes"></i></span>
+                </div>
+                <p class="errorMsg"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> parol bosh
+                    qoldirmang!!!</p>
+                <button>Login</button>
+            </form>
+            <i class="fa fa-times close" aria-hidden="true"></i>
+        </div>
+        <div class="headerTitle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="left">
+                            <h1>I design digital products that make an impact.</h1>
+                            <p>Hi! I’m Alex, a product designer based in Oakland. I create user-friendly interfaces for
+                                fast-growing startups.</p>
+                            <button>Hire me!</button>
+                            <div class="flex">
+                                <img src="./img/kubok.png" alt="">
+                                <p>Independent Of The Year <span>Annual Awards 2020 • awwwards.com</span> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="img">
+                            <img src="./img/IMAGE(1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="cul">
+                        <a class="uno" href="#">about</a>
+                        <div class="img">
+                            <img src="./img/yulduz.png" alt="">
+                        </div>
+                        <p class="text">Working with Alex was interesting. He went above and beyond what I've asking for
+                            and provided such an amazing design for my mobile application.</p>
+                        <div class="flex">
+                            <img src="./img/IMAGE.png" alt="">
+                            <p class="text">Steve McQuillen <span>CEO @ Vencortex</span> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h2 class="title">Trusted by the fastest growing <br> digital startups</h2>
+                    <div class="card">
+                        <div class="box">
+                            <h1 id="countdown">7+</h1>
+                            <p class="text">Years of experience</p>
+                        </div>
+                        <div class="box">
+                            <h1 id="count">50+</h1>
+                            <p class="text">Projects completed</p>
+                        </div>
+                        <div class="box">
+                            <h1 id="lil">30+</h1>
+                            <p class="text">Happy clients</p>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="./img/Frame.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- center -->
+    <section class="center">
+        <div class="container">
+            <a href="#" class="uno">work</a>
+            <h2 class="title">Bringing stellar results <br> for every client.</h2>
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="car">
+                        <img src="./img/card.png" alt="">
+                        <h4 class="meta">Maize Website Design</h4>
+                        <span>Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. <br> Nulla
+                            facilisi.</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="car">
+                        <img src="./img/card 1.png" alt="">
+                        <h4 class="meta">Datadash Product Design</h4>
+                        <span>Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. <br> Nulla
+                            facilisi.</span>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                    <div class="mul">
+                        <img src="./img/card 2.png" alt="">
+                        <h4 class="meta">Joggr Website Design</h4>
+                        <span>Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. Nulla
+                            facilisi.</span>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="car">
+                        <img src="./img/card 3.png" alt="">
+                        <h4 class="meta">Otsuka Pharmaceutical</h4>
+                        <span>Partnering with healthcare researchers to improve patient communications <br> and
+                            experience.</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="car">
+                        <img src="./img/card 4.png" alt="">
+                        <h4 class="meta">Origin UI/UX Design</h4>
+                        <span>Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- work -->
+    <section class="work">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" class="uno">services</a>
+                    <h2 class="title">Pushing the boundaries of your potential</h2>
+                </div>
+                <div class="col-lg-4  col-md-6">
+                    <div class="box">
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M27.9993 30.3332C29.288 30.3332 30.3327 29.2885 30.3327 27.9999C30.3327 26.7112 29.288 25.6665 27.9993 25.6665C26.7107 25.6665 25.666 26.7112 25.666 27.9999C25.666 29.2885 26.7107 30.3332 27.9993 30.3332Z"
+                                stroke="#D8D8EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M28.0007 39.6668C34.444 39.6668 39.6673 34.4434 39.6673 28.0001C39.6673 21.5568 34.444 16.3335 28.0007 16.3335C21.5573 16.3335 16.334 21.5568 16.334 28.0001C16.334 34.4434 21.5573 39.6668 28.0007 39.6668Z"
+                                stroke="#D8D8EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M28 49C39.598 49 49 39.598 49 28C49 16.402 39.598 7 28 7C16.402 7 7 16.402 7 28C7 39.598 16.402 49 28 49Z"
+                                stroke="#D8D8EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <h4 class="meta">Branding</h4>
+                        <p class="text">Refresh your logo, revamp your website, and even your letterhead— develop a
+                            cohesive aesthetic for your brand.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6">
+                    <div class="box">
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M42.9333 13.0667L41.3 14.7L42.9333 13.0667ZM7 28H9.33333H7ZM28 7V9.33333V7ZM46.6667 28H49H46.6667ZM13.0667 13.0667L14.7 14.7L13.0667 13.0667Z"
+                                stroke="#D8D8EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M21.0007 37.3335C19.0417 35.8643 17.5948 33.816 16.8647 31.4787C16.1346 29.1415 16.1584 26.6338 16.9327 24.3108C17.707 21.9878 19.1926 19.9674 21.179 18.5356C23.1655 17.1039 25.552 16.3335 28.0007 16.3335C30.4493 16.3335 32.8358 17.1039 34.8223 18.5356C36.8087 19.9674 38.2943 21.9878 39.0686 24.3108C39.8429 26.6338 39.8667 29.1415 39.1366 31.4787C38.4065 33.816 36.9596 35.8643 35.0007 37.3335C34.0896 38.2352 33.4037 39.3388 32.9984 40.5549C32.593 41.771 32.4796 43.0654 32.6673 44.3335C32.6673 45.5711 32.1757 46.7581 31.3005 47.6333C30.4253 48.5085 29.2383 49.0001 28.0007 49.0001C26.763 49.0001 25.576 48.5085 24.7008 47.6333C23.8257 46.7581 23.334 45.5711 23.334 44.3335C23.5217 43.0654 23.4083 41.771 23.003 40.5549C22.5976 39.3388 21.9117 38.2352 21.0007 37.3335Z"
+                                stroke="#D8D8EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M22.6309 39.6665H33.3642" stroke="#D8D8EB" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <h4 class="meta">Packaging</h4>
+                        <p class="text">Refresh your logo, revamp your website, and even your letterhead— develop a
+                            cohesive aesthetic for your brand.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6">
+                    <div class="box">
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14 32.6665H9.33333C8.04467 32.6665 7 33.7112 7 34.9999V39.6665C7 40.9552 8.04467 41.9999 9.33333 41.9999H14C15.2887 41.9999 16.3333 40.9552 16.3333 39.6665V34.9999C16.3333 33.7112 15.2887 32.6665 14 32.6665Z"
+                                stroke="#D8D8EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M46.666 32.6665H41.9993C40.7107 32.6665 39.666 33.7112 39.666 34.9999V39.6665C39.666 40.9552 40.7107 41.9999 41.9993 41.9999H46.666C47.9547 41.9999 48.9993 40.9552 48.9993 39.6665V34.9999C48.9993 33.7112 47.9547 32.6665 46.666 32.6665Z"
+                                stroke="#D8D8EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M30.334 14H25.6673C24.3787 14 23.334 15.0447 23.334 16.3333V21C23.334 22.2887 24.3787 23.3333 25.6673 23.3333H30.334C31.6226 23.3333 32.6673 22.2887 32.6673 21V16.3333C32.6673 15.0447 31.6226 14 30.334 14Z"
+                                stroke="#D8D8EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M23.3327 19.8335C20.2288 20.3502 17.3894 21.8976 15.2728 24.2259C13.1561 26.5543 11.8855 29.5278 11.666 32.6668"
+                                stroke="#D8D8EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M32.666 19.8335C35.7699 20.3502 38.6093 21.8976 40.7259 24.2259C42.8426 26.5543 44.1132 29.5278 44.3327 32.6668"
+                                stroke="#D8D8EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M23.334 18.6665H9.33398" stroke="#D8D8EB" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M46.666 18.6665H32.666" stroke="#D8D8EB" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M6.99935 21.0001C8.28801 21.0001 9.33268 19.9554 9.33268 18.6668C9.33268 17.3781 8.28801 16.3335 6.99935 16.3335C5.71068 16.3335 4.66602 17.3781 4.66602 18.6668C4.66602 19.9554 5.71068 21.0001 6.99935 21.0001Z"
+                                stroke="#D8D8EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M48.9993 21.0001C50.288 21.0001 51.3327 19.9554 51.3327 18.6668C51.3327 17.3781 50.288 16.3335 48.9993 16.3335C47.7107 16.3335 46.666 17.3781 46.666 18.6668C46.666 19.9554 47.7107 21.0001 48.9993 21.0001Z"
+                                stroke="#D8D8EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <h4 class="meta">Memorabilia</h4>
+                        <p class="text">Choose from easy, affordable options for merch like custom tees and sets of
+                            pins.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6">
+                    <div class="box">
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.3333 18.6665L7 27.9999L16.3333 37.3332" stroke="#D8D8EB" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M39.666 18.6665L48.9993 27.9999L39.666 37.3332" stroke="#D8D8EB" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M32.6673 9.33301L23.334 46.6664" stroke="#D8D8EB" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <h4 class="meta">Visual Aids</h4>
+                        <p class="text">Make your point more convincingly with branded flyers, slides, catalogues,
+                            infographics./p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bot">
+                        <button>Start a project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- carusel -->
+    <section class="carusel">
+        <div class="container">
+            <a href="#" class="uno">Testimonials</a>
+            <h2 class="title">Hear it directly from <br> my clients.</h2>
+            <div class="owl-carousel">
+                <div class="var">
+                    <img src="./img/yulduz.png" alt="">
+                    <h4 class="meta">Highly professional</h4>
+                    <p class="text">Alex was in control throughout the project. They <br> delivered on the promised
+                        deadlines and
+                        we love <br> the work they did!</p>
+                    <div class="flex">
+                        <img src="./img/IMAGE.png" alt="">
+                        <h5>Steve McQuillen <span>Marketing Manager, Vowels</span> </h5>
+                    </div>
+                </div>
+                <div class="var">
+                    <img src="./img/yulduz.png" alt="">
+                    <h4 class="meta">Creative and fearless</h4>
+                    <p class="text">Alex was in control throughout the project. They <br> delivered on the promised
+                        deadlines and
+                        we love <br> the work they did!</p>
+                    <div class="flex">
+                        <img src="./img/jec.png" alt="">
+                        <h5>Rebecca Smith <span>CEO, Consonants</span> </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- started -->
+    <section class="started">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left">
+                        <a href="#" class="uno">Process</a>
+                        <h2 class="title">Getting started <br> is easy.</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right">
+                        <p class="text">I've developed a structure that saves <br> time (and money) while making the <br> most of our interactions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box">
+                        <h1>[1]</h1>
+                    <h4 class="meta">Listen</h4>
+                    <p class="text">I get to know you and your company, your goals and expectations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box">
+                        <h1>[2]</h1>
+                    <h4 class="meta">Ideate</h4>
+                    <p class="text">I get to know you and your company, your goals and expectations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box">
+                        <h1>[3]</h1>
+                    <h4 class="meta">Execute</h4>
+                    <p class="text">I get to know you and your company, your goals and expectations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- shop -->
+    <section class="shop">
+        <div class="container">
+            <a href="#" class="uno">shop</a>
+            <h2 class="title">In a rush? <br> Shop ready designs here.</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="car">
+                        <img src="./img/card 5.png" alt="">
+                        <h4 class="meta">Ergonomic Frozen Pants</h4>
+                        <p class="text">In et consequ</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="car">
+                        <img src="./img/card 6.png" alt="">
+                        <h4 class="meta">Handmade Fresh Bike</h4>
+                        <p class="text">In et consequ</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="car">
+                        <img src="./img/card 7.png" alt="">
+                        <h4 class="meta">Small Soft Pizza</h4>
+                        <p class="text">In et consequ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row def activeCourses">
+                <div class="col-lg-4">
+                    <div class="car">
+                        <img src="./img/card 6.png" alt="">
+                        <h4 class="meta">Ergonomic Frozen Pants</h4>
+                        <p class="text">In et consequ</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="car">
+                        <img src="./img/card 4.png" alt="">
+                        <h4 class="meta">Handmade Fresh Bike</h4>
+                        <p class="text">In et consequ</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="car">
+                        <img src="./img/card 5.png" alt="">
+                        <h4 class="meta">Small Soft Pizza</h4>
+                        <p class="text">In et consequ</p>
+                    </div>
+                </div>
+            </div>
+             <div class="bot">
+                <button class="uno">View all products</button>
+             </div>
+        </div>
+    </section>
+    <!-- desigin -->
+    <section class="desigin">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <a href="#" class="uno">blog</a>
+                    <h2 class="title">Words On Design, Tech <br> & Other Things I Love</h2>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="bot">
+                        <button>Explore all posts</button>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./img/card 8.png" alt="">
+                </div>
+                <div class="col-lg-8">
+                    <div class="box">
+                        <a href="#" class="uno">Design • 6 Oct, 2021</a>
+                        <h4 class="meta">On our obsession with circles</h4>
+                        <p class="text">Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. <br> Nulla facilisi.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./img/card 9.png" alt="">
+                </div>
+                <div class="col-lg-8">
+                    <div class="box">
+                        <a href="#" class="uno">Design • 6 Oct, 2021</a>
+                        <h4 class="meta">On our obsession with circles</h4>
+                        <p class="text">Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. <br> Nulla facilisi.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./img/card 10.png" alt="">
+                </div>
+                <div class="col-lg-8">
+                    <div class="box">
+                        <a href="#" class="uno">Design • 6 Oct, 2021</a>
+                        <h4 class="meta">On our obsession with circles</h4>
+                        <p class="text">Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. <br> Nulla facilisi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about -->
+    <section class="about">
+        <div class="container">
+               <div class="card">
+                <div class="box">
+                    <div class="img">
+                        <img src="./img/main.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h4 class="meta">Work</h4>
+                        <p>Favorite projects, award-winning campaigns and more.</p>
+                        <a href="#" class="uno">View all</a>
+                    </div>
+
+                </div>
+               <div class="box">
+                <div class="img">
+                    <img src="./img/rang.png" alt="">
+                </div>
+                <div class="text">
+                    <h4 class="meta">About</h4>
+                    <p>My journey, career highlights and everything else you need to know.</p>
+                    <a href="#" class="uno">Get to know me</a>
+                </div>
+               </div>
+               </div>
+            </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="fot">
+            <h2 class="title">Have something in mind?</h2>
+            <h2 class="title"> Let's connect.</h2>
+            <h2 class="title"> Have something in mind?</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                   <div class="asu">
+                    <a href="#" class="uno">alexsmith@example.com</a>
+                   </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <ul>
+                        <li>
+                            <a href="#">Work</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <ul>
+                        <li>
+                            <a href="#">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="#">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="#">Behance</a>
+                        </li>
+                        <li>
+                            <a href="#">GitHub</a>
+                        </li>
+                        <li>
+                            <a href="#">Dribbble</a>
+                        </li>
+                    </ul>
+                </div> 
+                <div class="col-lg-3 col-md-6">
+                    <p class="text">Subscribe to my weekly newsletter</p>
+                    <form action="#">
+                        <input type="text" placeholder="">
+                        <button></button>
+                    </form>
+                </div> 
+            </div>
+            <div class="ciz"></div>
+            <div class="bottom">
+                <div class="left">
+                    <p class="text">© Template by Sumit Hegde- Powered by Webflow</p>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li>
+                            <a href="#">Style Guide</a>
+                        </li>
+                        <li>
+                            <a href="#">Licenses</a>
+                        </li>
+                        <li>
+                            <a href="#">Instructions</a>
+                        </li>
+                        <li>
+                            <a href="#">Change Log</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Libs/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
